@@ -8,7 +8,7 @@ PACKAGE="ext4-task"
 rlJournalStart
 
     rlPhaseStartTest
-        rlRun "cat /proc/filesystems | grep 'ext4'" 0 "Check if ext4 is supported"
+        rlRun "cat /proc/filesystems | grep 'sysfs'" 0 "Check if sysfs is supported"
     rlPhaseEnd
 
     rlJournalPrintText
